@@ -1,0 +1,205 @@
+/* Estilos para la página principal */
+html{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #0066CC;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+    margin-left: 50px;
+}
+
+.logout-button {
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 50px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+    width: 550px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+}
+
+.product-info,
+.product-title,
+.product-title1,
+.product-info input,
+.edit-button {
+    text-align: center;
+}
+
+.product-info {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.product-title1{
+    font-size: 30px;
+}
+
+.product-value{
+    margin-top:-15px;
+    font-size: 25px;
+}
+
+.product-info input {
+    width: 380px;
+    height: 35px;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid #CBCBCB;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s; 
+}
+
+.product-info input::placeholder {
+    color: #CBCBCB;
+    transition: color 0.3s; /* Agrega una transición de color suave para el marcador de posición */
+}
+
+/* Establece reglas de estilo adicionales como sea necesario para los estados normales o activos */
+
+/* Agrega estilos para los estados normales (sin foco) */
+.product-info input:not(:focus) {
+    border: 2px solid #CBCBCB;
+}
+
+/* Agrega estilos para los estados activos (con foco) */
+.product-info input:focus {
+    border: 2px solid #0066CC;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.7); /* Ejemplo: resalta el input cuando está enfocado */
+}
+
+/* Estilos de marcador de posición para el estado normal (sin foco) */
+.product-info input:not(:focus)::placeholder {
+    color: #CBCBCB;
+}
+
+/* Estilos de marcador de posición para el estado activo (con foco) */
+.product-info input:focus::placeholder {
+    color: #0066CC; /* Ejemplo: cambia el color del marcador de posición cuando el input está enfocado */
+}
+
+.product-title{
+ font-size: 20px;
+}
+
+.edit-button {
+    width: 410px;
+    height: 60px;
+    font-size: 25px;
+    background-color: #0066CC;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0px 30px 0px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.edit-button:hover {
+    background-color: #005599;
+}
+
+
+.edit-button:active {
+    background-color: #003366;
+}
+
+@media (max-width: 1366px) {
+
+    body{
+        width: 100%;
+    }
+    .container {
+        width: 70%; /* Reduzca el ancho del contenedor */
+        margin-top: 140px; /* Ajuste superior para dar más espacio en la parte superior */
+    }
+    .product-info, .edit-button {
+        width: 80%; 
+    }
+    .edit-button {
+        width: 410px;
+    }
+
+    
+}
+
+/* Estilos para pantallas medianas (tabletas) */
+@media (max-width: 700px) {
+
+    body{
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    .logo {
+        width: 200px;
+        margin-left: 5px;
+    }
+    .logout-button {
+        margin-right: 20px;
+        font-size: 15px;
+    }
+
+    .container {
+        width: 100%;
+        background-color: transparent; 
+        box-shadow: none;
+        border: none; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .product-info {
+        width: 100%;
+        padding: 10px;
+    }
+    .edit-button {
+        width: 74%;
+    }
+
+    .product-info input{
+        width: 70%;
+    }
+
+    .product-title{
+        font-size: 18px;
+       }
+}
+

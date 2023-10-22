@@ -1,0 +1,204 @@
+/* Estilos generales que aplican a todas las pantallas */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0066CC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/*Login - register*/
+header {
+    background-color: #ffffff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: left;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 300px;
+    margin-left: 50px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+    width: 600px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.register-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 580px;
+    margin-top: 100;
+    padding: 20px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+input {
+    width: 400px;
+    height: 50px;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 25px;
+    border: 2px solid #CBCBCB;
+    border-radius: 15px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+input::placeholder {
+    font-size: 18px;
+    transition: transform 0.2s ease, font-size 0.2s ease;
+}
+
+input:focus::placeholder {
+    transform: translateY(-15px) scale(0.8);
+    font-size: 18px;
+}
+
+button.login-button {
+    width: 100%;
+    height: 74px;
+    font-size: 25px;
+    background-color: #0066CC;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton_iniciar{
+    width: 100%;
+}
+
+button.login-button:hover {
+    background-color: #005599; 
+    color: #fff; 
+}
+
+button.login-button:active {
+    background-color: #003366;
+    color: #fff; 
+}
+
+p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+footer {
+    width: 100%;
+    height: 35px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Estilos específicos para pantallas de portátil (1366px) y móvil (414px) */
+@media (max-width: 1366px) {
+    
+    .container {
+        width: 40%; 
+    }
+    input, button {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    header {
+        width: 100%;
+        justify-content: center;
+    }
+    .logo {
+        width: 250px;
+        margin-left: 0px;
+    }
+    .container {
+        width: 100%;
+        background-color: transparent; 
+        box-shadow: none;
+        border: none; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .register-box{
+        margin-top: 80px;
+    }
+
+    .title{
+        color: #ffffff;
+        font-size: 30px;
+    }
+    input{
+        background-color: transparent; 
+        color: #ffffff;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    input::placeholder {
+        transition: transform 0.2s ease, font-size 0.2s ease;
+        color: #fff;
+    }
+
+    button.login-button {
+        background-color: #fff;
+        height: 50px;
+        color: #0066CC;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    .login-box {
+        padding: 20px;
+    }
+    
+    p, a {
+        color: #fff; 
+        display: inline; 
+    }
+
+    footer{
+        width: 100%;
+    }
+}

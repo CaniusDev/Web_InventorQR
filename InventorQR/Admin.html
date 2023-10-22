@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Administrador de usuarios</title>
+</head>
+<header>
+    <a href="./Login.html"><img src="./Images/InventorQR blanco.png" alt="Logo" class="logo"></a>
+    <a class="logout-button" href="./Login.html">Cerrar Sesión</a>
+</header>
+<body class="admin">
+    <div class="container">
+        <div class="admin-info">
+            <h1 class="admin-title">Ver Lista de Usuarios</h1>
+            <select class="user-select">
+                <option value="ID1">ID 1</option>
+                <option value="ID2">ID 2</option>
+                <option value="ID3">ID 3</option>
+            </select>
+        </div>
+        <div class="admin-info">
+            <h1 class="admin-title">Editar Nombre</h1>
+            <input type="text" class="admin-input">
+        </div>
+        <div class="admin-info">
+            <h1 class="admin-title">Editar Correo</h1>
+            <input type="email" class="admin-input">
+        </div>
+        <div class="admin-info">
+            <h1 class="admin-title">Ver Contraseña</h1>
+            <div class="password-input pass-input">
+                <input type="password" class="admin-input">
+                 <span class="password-toggle" id="togglePassword"></span> <!-- 👁️ -->
+            </div>
+        </div>
+        <div class="admin-button-container">
+            <button class="admin-button">Guardar Cambios</button>
+            <button class="admin-button delete-button">Eliminar Usuario</button>
+        </div>
+    </div>
+</body>
+<footer></footer>
+</html>
